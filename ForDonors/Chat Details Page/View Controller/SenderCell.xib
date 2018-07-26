@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SenderCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoImage" translatesAutoresizingMaskIntoConstraints="NO" id="Q3C-fa-bGn">
+                        <rect key="frame" x="290" y="3" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="O1p-pF-RyW"/>
+                            <constraint firstAttribute="width" constant="24" id="i4Z-hX-cfh"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DE3-GU-wqu">
+                        <rect key="frame" x="16" y="7" width="259" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lorem ipsum dolor sit amet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3h-pe-xdS" customClass="PaddingLabel" customModule="ForDonors" customModuleProvider="target">
+                        <rect key="frame" x="22" y="17" width="253" height="30"/>
+                        <color key="backgroundColor" red="0.29411764705882354" green="0.68627450980392157" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rightTextInset">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="topTextInset">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomTextInset">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday 2nd Dec 11:45" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC5-gZ-Lgm">
+                        <rect key="frame" x="145" y="58" width="130" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="rAh-7G-I6r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="10"/>
+                        <color key="textColor" red="0.18039215689999999" green="0.1960784314" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i3h-pe-xdS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="1wP-vg-D3Y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eC5-gZ-Lgm" secondAttribute="trailing" constant="29" id="3gN-8I-5Ut"/>
+                    <constraint firstAttribute="trailing" secondItem="Q3C-fa-bGn" secondAttribute="trailing" constant="6" id="8IW-wJ-abT"/>
+                    <constraint firstItem="eC5-gZ-Lgm" firstAttribute="top" secondItem="i3h-pe-xdS" secondAttribute="bottom" constant="11" id="JK8-Cx-AkP"/>
+                    <constraint firstItem="Q3C-fa-bGn" firstAttribute="leading" secondItem="i3h-pe-xdS" secondAttribute="trailing" constant="15" id="LRy-Mk-jN6"/>
+                    <constraint firstItem="Q3C-fa-bGn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="UvA-YC-Ibb"/>
+                    <constraint firstItem="eC5-gZ-Lgm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="129" id="t3h-fu-PHQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="i3h-pe-xdS" secondAttribute="bottom" constant="32" id="wdF-e1-kXd"/>
+                    <constraint firstItem="i3h-pe-xdS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="z6h-TB-Ea5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgVwSender" destination="Q3C-fa-bGn" id="aoc-6Z-TMB"/>
+                <outlet property="lblMsgSendTime" destination="eC5-gZ-Lgm" id="AwK-FJ-lnn"/>
+                <outlet property="lblSendingMessage" destination="i3h-pe-xdS" id="6yY-MQ-UbS"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="NoImage" width="275" height="183"/>
+    </resources>
+</document>

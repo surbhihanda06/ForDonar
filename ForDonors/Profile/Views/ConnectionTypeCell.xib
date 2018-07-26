@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectionTypeCell" id="KGk-i7-Jjw" customClass="ConnectionTypeCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGo-M4-VMk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iIJ-45-mEk">
+                                <rect key="frame" x="256" y="7" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="UO8-24-LeV"/>
+                                    <constraint firstAttribute="width" constant="47" id="mHF-yt-w8f"/>
+                                </constraints>
+                                <color key="onTintColor" red="0.0" green="0.74509803919999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected Via Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAW-A7-mcl">
+                                <rect key="frame" x="60" y="11" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook-1" translatesAutoresizingMaskIntoConstraints="NO" id="6AE-bM-wyk">
+                                <rect key="frame" x="20" y="11" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="HmT-bu-uZw"/>
+                                    <constraint firstAttribute="height" constant="20" id="Xkk-Be-cXf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iIJ-45-mEk" secondAttribute="trailing" constant="17" id="2mn-Ww-rYA"/>
+                            <constraint firstItem="iIJ-45-mEk" firstAttribute="top" secondItem="IGo-M4-VMk" secondAttribute="top" constant="7" id="GGQ-Vb-usP"/>
+                            <constraint firstItem="6AE-bM-wyk" firstAttribute="leading" secondItem="IGo-M4-VMk" secondAttribute="leading" constant="20" id="ILU-wN-dYG"/>
+                            <constraint firstAttribute="bottom" secondItem="6AE-bM-wyk" secondAttribute="bottom" constant="13" id="LXg-gD-ugx"/>
+                            <constraint firstItem="iIJ-45-mEk" firstAttribute="leading" secondItem="nAW-A7-mcl" secondAttribute="trailing" constant="-4" id="ZUy-dH-1Gw"/>
+                            <constraint firstItem="6AE-bM-wyk" firstAttribute="top" secondItem="IGo-M4-VMk" secondAttribute="top" constant="11" id="bf4-Bo-8T4"/>
+                            <constraint firstItem="nAW-A7-mcl" firstAttribute="top" secondItem="IGo-M4-VMk" secondAttribute="top" constant="11" id="c9z-dJ-pX6"/>
+                            <constraint firstItem="nAW-A7-mcl" firstAttribute="leading" secondItem="6AE-bM-wyk" secondAttribute="trailing" constant="20" id="hZ1-B5-yJB"/>
+                            <constraint firstAttribute="bottom" secondItem="iIJ-45-mEk" secondAttribute="bottom" constant="6" id="rur-mY-pKN"/>
+                            <constraint firstAttribute="bottom" secondItem="nAW-A7-mcl" secondAttribute="bottom" constant="12" id="w4f-Z8-X2B"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="IGo-M4-VMk" secondAttribute="bottom" constant="-0.5" id="1Au-AN-vB4"/>
+                    <constraint firstItem="IGo-M4-VMk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2Sa-w7-rBA"/>
+                    <constraint firstAttribute="trailing" secondItem="IGo-M4-VMk" secondAttribute="trailing" id="XWr-Qf-JCj"/>
+                    <constraint firstItem="IGo-M4-VMk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nUk-Ca-j1h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="connectionLogo" destination="6AE-bM-wyk" id="758-ry-ZCj"/>
+                <outlet property="connectionTypeName" destination="nAW-A7-mcl" id="3Qa-tJ-gFY"/>
+                <outlet property="switchLogo" destination="iIJ-45-mEk" id="Qpl-KL-qwf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="facebook-1" width="32" height="32"/>
+    </resources>
+</document>

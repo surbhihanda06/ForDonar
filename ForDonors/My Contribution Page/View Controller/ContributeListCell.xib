@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ContributeListCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="29.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTj-rm-BPl">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="XHA-rL-67L">
+                                <rect key="frame" x="0.0" y="8" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="EvB-up-hXr"/>
+                                    <constraint firstAttribute="height" constant="14" id="l3K-KW-cjw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asking $5000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLh-K4-SGh">
+                                <rect key="frame" x="17" y="4" width="100" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="OC5-jC-djt"/>
+                                    <constraint firstAttribute="height" constant="20" id="fvC-m2-XDr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="QpC-RK-SJN">
+                                <rect key="frame" x="159" y="9" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="Bl8-D6-YKY"/>
+                                    <constraint firstAttribute="height" constant="12" id="ZFC-1N-Nr5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec 10, 2018" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5I-IP-riv">
+                                <rect key="frame" x="178" y="5" width="102" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="eKK-bA-glX"/>
+                                    <constraint firstAttribute="width" constant="102" id="vhg-Nb-FpF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XHA-rL-67L" firstAttribute="leading" secondItem="DTj-rm-BPl" secondAttribute="leading" id="0Z0-E4-69k"/>
+                            <constraint firstItem="VLh-K4-SGh" firstAttribute="top" secondItem="DTj-rm-BPl" secondAttribute="top" constant="4" id="CAw-C7-dCz"/>
+                            <constraint firstItem="VLh-K4-SGh" firstAttribute="leading" secondItem="XHA-rL-67L" secondAttribute="trailing" constant="3" id="ESo-jh-nVB"/>
+                            <constraint firstAttribute="bottom" secondItem="QpC-RK-SJN" secondAttribute="bottom" constant="9" id="Lf6-Ej-aOL"/>
+                            <constraint firstItem="K5I-IP-riv" firstAttribute="top" secondItem="DTj-rm-BPl" secondAttribute="top" constant="5" id="UbR-Fu-apE"/>
+                            <constraint firstAttribute="bottom" secondItem="VLh-K4-SGh" secondAttribute="bottom" constant="6" id="Yew-d0-TXd"/>
+                            <constraint firstItem="QpC-RK-SJN" firstAttribute="top" secondItem="DTj-rm-BPl" secondAttribute="top" constant="9" id="fX0-Pm-Zbo"/>
+                            <constraint firstAttribute="bottom" secondItem="XHA-rL-67L" secondAttribute="bottom" constant="8" id="iSW-gD-7Qh"/>
+                            <constraint firstAttribute="bottom" secondItem="K5I-IP-riv" secondAttribute="bottom" constant="5" id="kKO-Al-xAQ"/>
+                            <constraint firstItem="XHA-rL-67L" firstAttribute="top" secondItem="DTj-rm-BPl" secondAttribute="top" constant="8" id="pCy-Ea-jBi"/>
+                            <constraint firstAttribute="height" constant="30" id="rXB-wF-c13"/>
+                            <constraint firstItem="K5I-IP-riv" firstAttribute="leading" secondItem="QpC-RK-SJN" secondAttribute="trailing" constant="7" id="yH9-Ok-eol"/>
+                            <constraint firstAttribute="trailing" secondItem="K5I-IP-riv" secondAttribute="trailing" id="zBJ-kw-0s7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DTj-rm-BPl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TZP-rW-kuL"/>
+                    <constraint firstAttribute="trailing" secondItem="DTj-rm-BPl" secondAttribute="trailing" id="Uec-9X-0PD"/>
+                    <constraint firstItem="DTj-rm-BPl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ce7-6T-o9y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDate" destination="K5I-IP-riv" id="NWx-QN-uBN"/>
+                <outlet property="lblPrice" destination="VLh-K4-SGh" id="tA0-Gq-erR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar" width="16" height="16"/>
+        <image name="dollar" width="16" height="16"/>
+    </resources>
+</document>

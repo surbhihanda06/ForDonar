@@ -1,0 +1,137 @@
+/* 
+  Localizable.strings
+  ForDonors
+
+  Created by NITS_Mac3 on 04/06/18.
+  Copyright © 2018 NATIT. All rights reserved.
+*/
+"Home" = "Home";
+"Profile" = "Profile";
+"Settings" = "Settings";
+"Create Campaign" = "Create Campaign";
+"Create Campaign Organ" = "Create Campaign Organ";
+"My Campaigns" = "My Campaigns";
+"My Contribution" = "My Contribution";
+"Search Donars" = "Search Donars";
+"Offer Donars" = "Offer Donars";
+"Chat List" = "Chat List";
+"Stripe Account" = "Stripe Account";
+"Become A Donor" = "Become A Donor";
+"Logout" = "Logout";
+"Donar Verification" = "Donar Verification";
+"Category" = "Category";
+
+//Create Campaign
+"Create Campaign" = "Create Campaign";
+"Campaign Name" = "Campaign Name";
+"Campaign Tag Line" = "Campaign Tag Line";
+"Description" = "Description";
+"Topic" = "Topic";
+"End Date" = "End Date";
+"Location" = "Location";
+"YouTube Link" = "YouTube Link";
+"Asking" = "Asking";
+"Add Perks" = "Add Perks";
+"Add New Park" = "Add New Park";
+"Add Collaborators" = "Add Collaborators";
+"Search Contacts" = "Search Contacts";
+"Next" = "Next";
+
+//Create Campaign: Organ
+"Create Campaign: Organ" = "Create Campaign: Organ";
+"Topic Organ" = "Topic Organ";
+"Select Organ" = "Select Organ";
+"Gender" = "Gender";
+"Blood Type" = "Blood Type";
+"Height" = "Height";
+"Weight" = "Weight";
+"Expire Date" = "Expire Date";
+"Offer Surgery Expenses (PSE)" = "Offer Surgery Expenses (PSE)";
+
+//Campaign Details Page
+"Details" = "Details";
+"YouTube URL" = "YouTube URL";
+"Ok" = "Ok";
+"Cancel" = "Cancel";
+
+//My Campaigns
+"My Campaigns" = "My Campaigns";
+
+//My Contributions
+"My Contributions" = "My Contributions";
+
+//Chat List
+"Chat List" = "Chat List";
+
+//Become A Donor
+"Select Donation" = "Select Donation";
+"Skip" = "Skip";
+"Select Organs" = "Select Organs";
+"Submit" = "Submit";
+"By checking you're agreeing to all terms & conditions" = "By checking you're agreeing to all terms & conditions";
+
+//Settings
+"Settings" = "Settings";
+"Account" = "Account";
+"Edit Account" = "Edit Account";
+"Add Donor" = "Add Donor";
+"Change Password" = "Change Password";
+"Preference" = "Preference";
+"Localization" = "Localization";
+"Region" = "Region";
+
+//Profile
+"Profile" = "Profile";
+"Remove DonorPro" = "Remove DonorPro";
+"Social Connection" = "Social Connection";
+
+//Edit Profile
+"Save" = "Save";
+
+//QUick Donations
+"Quick Donations" = "Quick Donations";
+
+//Search
+"Search" = "Search";
+
+//Comment
+"Comment" = "Comment";
+
+//Change Password
+"Change Password" = "Change Password";
+
+//Campaign Overview
+"Campaign Overview" = "Campaign Overview";
+
+//Campaign
+"Campaign" = "Campaign";
+
+//Add Park
+"Add Park" = "Add Park";
+
+//Campaign Details
+"Campaign Details" = "Campaign Details";
+
+//Payment
+"Payment" = "Payment";
+
+//Pop up
+"Campaign is Published" = "Campaign is Published";
+"Note that Verified Campaigns get more attention. User is required to verify identity and banking information to receive funding when Campaign ends. Funding is deposit after 2 weeks closing of campaign." = "Note that Verified Campaigns get more attention. User is required to verify identity and banking information to receive funding when Campaign ends. Funding is deposit after 2 weeks closing of campaign.";
+"Verify Identity" = "Verify Identity";
+"Enter Banking Information" = "Enter Banking Information";
+
+//Verification
+"Verification" = "Verification";
+
+//Add Banking
+"Add Banking" = "Add Banking";
+
+
+
+
+
+
+
+
+

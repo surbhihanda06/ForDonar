@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="KGk-i7-Jjw" customClass="CampaignYoutubeURLCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nm2-ej-7Mu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YouTube Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofz-uO-cgf">
+                                <rect key="frame" x="17" y="0.0" width="173" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="00H-2K-X9N"/>
+                                    <constraint firstAttribute="height" constant="35" id="wY9-Y9-FZA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXL-6X-MAK">
+                                <rect key="frame" x="17" y="33" width="286" height="43"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TDN-sU-QHa">
+                                        <rect key="frame" x="8" y="1" width="270" height="41"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="-1" id="OVM-pT-Lbc"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TDN-sU-QHa" firstAttribute="top" secondItem="FXL-6X-MAK" secondAttribute="top" constant="1" id="Sex-v7-7g0"/>
+                                    <constraint firstItem="TDN-sU-QHa" firstAttribute="centerY" secondItem="FXL-6X-MAK" secondAttribute="centerY" id="cZa-S4-Dyi"/>
+                                    <constraint firstAttribute="bottom" secondItem="TDN-sU-QHa" secondAttribute="bottom" constant="1" id="czm-Ll-L2J"/>
+                                    <constraint firstAttribute="trailing" secondItem="TDN-sU-QHa" secondAttribute="trailing" constant="8" id="dvc-hS-zUo"/>
+                                    <constraint firstItem="TDN-sU-QHa" firstAttribute="leading" secondItem="FXL-6X-MAK" secondAttribute="leading" constant="8" id="p4a-H4-Q43"/>
+                                    <constraint firstItem="TDN-sU-QHa" firstAttribute="centerX" secondItem="FXL-6X-MAK" secondAttribute="centerX" id="rwf-Vj-7Ew"/>
+                                    <constraint firstAttribute="height" constant="43" id="yug-jV-TSw"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUU-AB-1h2">
+                                <rect key="frame" x="17" y="81" width="286" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ek0-Od-AyT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zUU-AB-1h2" secondAttribute="bottom" constant="1" id="IAW-gh-Isd"/>
+                            <constraint firstItem="FXL-6X-MAK" firstAttribute="top" secondItem="Nm2-ej-7Mu" secondAttribute="top" constant="33" id="MWI-rt-ytH"/>
+                            <constraint firstItem="FXL-6X-MAK" firstAttribute="leading" secondItem="Nm2-ej-7Mu" secondAttribute="leading" constant="17" id="VV6-qX-cnf"/>
+                            <constraint firstAttribute="trailing" secondItem="zUU-AB-1h2" secondAttribute="trailing" constant="17" id="eFn-PA-zHQ"/>
+                            <constraint firstItem="zUU-AB-1h2" firstAttribute="leading" secondItem="Nm2-ej-7Mu" secondAttribute="leading" constant="17" id="meW-18-MsV"/>
+                            <constraint firstItem="ofz-uO-cgf" firstAttribute="top" secondItem="Nm2-ej-7Mu" secondAttribute="top" id="qNb-4h-6CF"/>
+                            <constraint firstItem="ofz-uO-cgf" firstAttribute="leading" secondItem="Nm2-ej-7Mu" secondAttribute="leading" constant="17" id="vgN-QW-wKa"/>
+                            <constraint firstAttribute="trailing" secondItem="FXL-6X-MAK" secondAttribute="trailing" constant="17" id="y5V-gr-2cG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nm2-ej-7Mu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ChW-bo-0jN"/>
+                    <constraint firstAttribute="trailing" secondItem="Nm2-ej-7Mu" secondAttribute="trailing" id="Kng-34-qOC"/>
+                    <constraint firstAttribute="bottom" secondItem="Nm2-ej-7Mu" secondAttribute="bottom" constant="-0.5" id="ZmF-J6-1vt"/>
+                    <constraint firstItem="Nm2-ej-7Mu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e1d-Wq-PRG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="ofz-uO-cgf" id="KF3-KU-ZBU"/>
+                <outlet property="tfYoutubeURL" destination="TDN-sU-QHa" id="t7l-nA-cnY"/>
+                <outlet property="vwHolder" destination="FXL-6X-MAK" id="0Nq-Kk-2N7"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="63.5"/>
+        </tableViewCell>
+    </objects>
+</document>

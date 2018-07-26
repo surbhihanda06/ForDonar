@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="myriadpro-bold.otf">
+            <string>MyriadPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SubCategoryCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeB-jD-yBP">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                        <subviews>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJo-sO-nKf">
+                                <rect key="frame" x="7" y="15" width="66" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SF-Rf-3uj">
+                                        <rect key="frame" x="4" y="5" width="58" height="20"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5OE-98-jDZ"/>
+                                    <constraint firstItem="9SF-Rf-3uj" firstAttribute="top" secondItem="TJo-sO-nKf" secondAttribute="top" constant="5" id="Ggg-xn-JP1"/>
+                                    <constraint firstAttribute="bottom" secondItem="9SF-Rf-3uj" secondAttribute="bottom" constant="5" id="Tro-r7-KNI"/>
+                                    <constraint firstItem="9SF-Rf-3uj" firstAttribute="leading" secondItem="TJo-sO-nKf" secondAttribute="leading" constant="4" id="W3F-BX-ufT"/>
+                                    <constraint firstAttribute="trailing" secondItem="9SF-Rf-3uj" secondAttribute="trailing" constant="4" id="mDw-ux-F24"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TJo-sO-nKf" secondAttribute="trailing" constant="7" id="1Pf-os-i7M"/>
+                            <constraint firstItem="TJo-sO-nKf" firstAttribute="top" secondItem="HeB-jD-yBP" secondAttribute="top" constant="15" id="Lhq-kL-lWh"/>
+                            <constraint firstItem="TJo-sO-nKf" firstAttribute="leading" secondItem="HeB-jD-yBP" secondAttribute="leading" constant="7" id="do9-48-mHh"/>
+                            <constraint firstAttribute="height" constant="60" id="gRF-b1-Hbq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="HeB-jD-yBP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ryd-72-JOP"/>
+                <constraint firstAttribute="trailing" secondItem="HeB-jD-yBP" secondAttribute="trailing" id="XYa-Be-hma"/>
+                <constraint firstItem="HeB-jD-yBP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Y8q-43-kdL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="lblSubCategoryName" destination="9SF-Rf-3uj" id="W46-Ui-5ej"/>
+                <outlet property="vwBg" destination="TJo-sO-nKf" id="1CY-nS-ORs"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

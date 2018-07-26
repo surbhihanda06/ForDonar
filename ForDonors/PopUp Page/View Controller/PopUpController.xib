@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpController" customModule="ForDonors" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBankingInformation" destination="Hlb-hA-hRU" id="4AT-BJ-GK9"/>
+                <outlet property="btnIdentity" destination="yjH-dc-ma1" id="nGI-Uh-aRL"/>
+                <outlet property="imgVwUser" destination="GVr-nm-prc" id="nzf-Uk-xFU"/>
+                <outlet property="lblStaticDesc" destination="lNd-Ye-Tk5" id="v3z-L3-ufr"/>
+                <outlet property="lblTitle" destination="ZYu-X4-nCl" id="WQN-hz-rg8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwBg" destination="9Wm-D8-ayE" id="yeN-5Z-kgS"/>
+                <outlet property="vwImage" destination="hTv-Tb-6yh" id="8OK-QB-WlO"/>
+                <outlet property="vwPopUp" destination="G3S-Mz-VS0" id="1ws-Yn-a2a"/>
+                <outlet property="vwTransparent" destination="QJE-hJ-mYu" id="17k-eu-I0r"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3S-Mz-VS0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJE-hJ-mYu">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4R-0o-5vO">
+                            <rect key="frame" x="30" y="69" width="260" height="342"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Wm-D8-ayE">
+                                    <rect key="frame" x="0.0" y="42" width="260" height="300"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campaign is Published" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYu-X4-nCl">
+                                            <rect key="frame" x="30" y="42" width="200" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="c1h-XN-c6U"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNd-Ye-Tk5">
+                                            <rect key="frame" x="18" y="70" width="224" height="102"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="102" id="I2q-Yu-WbB"/>
+                                            </constraints>
+                                            <string key="text">Note that Verified Campaigns get more attention. User is required to verify identity and banking information to receive funding when Campaign ends. Funding is deposit after 2 weeks closing of campaign.</string>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjH-dc-ma1">
+                                            <rect key="frame" x="30" y="193" width="200" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="nns-Zg-q26"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="13"/>
+                                            <state key="normal" title="Verify Identity"/>
+                                            <connections>
+                                                <action selector="btnVerifyIdentityPressed:" destination="-1" eventType="touchUpInside" id="b94-wt-gwH"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlb-hA-hRU">
+                                            <rect key="frame" x="30" y="243" width="200" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="I82-OZ-IaF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="13"/>
+                                            <state key="normal" title="Enter Banking Information"/>
+                                            <connections>
+                                                <action selector="btnBankingPressed:" destination="-1" eventType="touchUpInside" id="coQ-Og-uIH"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="yjH-dc-ma1" firstAttribute="leading" secondItem="9Wm-D8-ayE" secondAttribute="leading" constant="30" id="3Bo-uz-uE3"/>
+                                        <constraint firstAttribute="trailing" secondItem="Hlb-hA-hRU" secondAttribute="trailing" constant="30" id="7VX-IX-sKM"/>
+                                        <constraint firstAttribute="trailing" secondItem="lNd-Ye-Tk5" secondAttribute="trailing" constant="18" id="CtX-rz-OKd"/>
+                                        <constraint firstItem="ZYu-X4-nCl" firstAttribute="top" secondItem="9Wm-D8-ayE" secondAttribute="top" constant="42" id="DkC-f8-Zx3"/>
+                                        <constraint firstItem="Hlb-hA-hRU" firstAttribute="leading" secondItem="9Wm-D8-ayE" secondAttribute="leading" constant="30" id="GP6-2q-JKj"/>
+                                        <constraint firstAttribute="trailing" secondItem="yjH-dc-ma1" secondAttribute="trailing" constant="30" id="NlV-Pk-BBW"/>
+                                        <constraint firstItem="ZYu-X4-nCl" firstAttribute="leading" secondItem="9Wm-D8-ayE" secondAttribute="leading" constant="30" id="Qde-E7-epF"/>
+                                        <constraint firstItem="Hlb-hA-hRU" firstAttribute="top" secondItem="yjH-dc-ma1" secondAttribute="bottom" constant="14" id="cVl-FQ-qlj"/>
+                                        <constraint firstItem="yjH-dc-ma1" firstAttribute="top" secondItem="lNd-Ye-Tk5" secondAttribute="bottom" constant="21" id="g8K-q7-ptL"/>
+                                        <constraint firstItem="lNd-Ye-Tk5" firstAttribute="top" secondItem="ZYu-X4-nCl" secondAttribute="bottom" constant="8" id="gXB-km-5i2"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZYu-X4-nCl" secondAttribute="trailing" constant="30" id="q8j-Ml-TuQ"/>
+                                        <constraint firstItem="lNd-Ye-Tk5" firstAttribute="leading" secondItem="9Wm-D8-ayE" secondAttribute="leading" constant="18" id="t9G-Fl-vZO"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDa-96-0vo">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="74"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTv-Tb-6yh">
+                                            <rect key="frame" x="95" y="2" width="70" height="70"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="23" translatesAutoresizingMaskIntoConstraints="NO" id="GVr-nm-prc">
+                                                    <rect key="frame" x="2" y="2" width="66" height="66"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="6Ci-LN-evJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="GVr-nm-prc" secondAttribute="trailing" constant="2" id="EZv-QB-pIK"/>
+                                                <constraint firstItem="GVr-nm-prc" firstAttribute="leading" secondItem="hTv-Tb-6yh" secondAttribute="leading" constant="2" id="Hsk-sk-4yf"/>
+                                                <constraint firstItem="GVr-nm-prc" firstAttribute="top" secondItem="hTv-Tb-6yh" secondAttribute="top" constant="2" id="RVn-nS-Mug"/>
+                                                <constraint firstAttribute="bottom" secondItem="GVr-nm-prc" secondAttribute="bottom" constant="2" id="pCa-t5-qMh"/>
+                                                <constraint firstAttribute="height" constant="70" id="s9N-ed-vLu"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hTv-Tb-6yh" firstAttribute="centerY" secondItem="jDa-96-0vo" secondAttribute="centerY" id="9SB-tJ-SMG"/>
+                                        <constraint firstItem="hTv-Tb-6yh" firstAttribute="centerX" secondItem="jDa-96-0vo" secondAttribute="centerX" id="Whf-Nr-Y3g"/>
+                                        <constraint firstAttribute="height" constant="74" id="bqe-px-dyn"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="jDa-96-0vo" firstAttribute="top" secondItem="S4R-0o-5vO" secondAttribute="top" id="04W-JJ-RJu"/>
+                                <constraint firstAttribute="trailing" secondItem="9Wm-D8-ayE" secondAttribute="trailing" id="FGQ-PV-QmU"/>
+                                <constraint firstItem="jDa-96-0vo" firstAttribute="leading" secondItem="S4R-0o-5vO" secondAttribute="leading" id="Ggv-wo-Vlh"/>
+                                <constraint firstAttribute="bottom" secondItem="9Wm-D8-ayE" secondAttribute="bottom" id="J8i-Ux-3tE"/>
+                                <constraint firstItem="9Wm-D8-ayE" firstAttribute="top" secondItem="S4R-0o-5vO" secondAttribute="top" constant="42" id="M1u-bA-Em2"/>
+                                <constraint firstItem="9Wm-D8-ayE" firstAttribute="leading" secondItem="S4R-0o-5vO" secondAttribute="leading" id="boa-8a-lru"/>
+                                <constraint firstAttribute="width" constant="260" id="qOR-ZI-cCI"/>
+                                <constraint firstAttribute="height" constant="342" id="w1e-sN-vdD"/>
+                                <constraint firstAttribute="trailing" secondItem="jDa-96-0vo" secondAttribute="trailing" id="yRe-hw-UvC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QJE-hJ-mYu" firstAttribute="top" secondItem="G3S-Mz-VS0" secondAttribute="top" id="4Li-in-D6n"/>
+                        <constraint firstItem="S4R-0o-5vO" firstAttribute="centerX" secondItem="G3S-Mz-VS0" secondAttribute="centerX" id="G1l-yq-tkF"/>
+                        <constraint firstItem="QJE-hJ-mYu" firstAttribute="leading" secondItem="G3S-Mz-VS0" secondAttribute="leading" id="LJ2-9h-crn"/>
+                        <constraint firstItem="S4R-0o-5vO" firstAttribute="centerY" secondItem="G3S-Mz-VS0" secondAttribute="centerY" id="hAw-RF-KUu"/>
+                        <constraint firstAttribute="trailing" secondItem="QJE-hJ-mYu" secondAttribute="trailing" id="sge-LA-IgY"/>
+                        <constraint firstAttribute="bottom" secondItem="QJE-hJ-mYu" secondAttribute="bottom" id="vbR-Fg-YDJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="G3S-Mz-VS0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Kbk-kU-ciB"/>
+                <constraint firstItem="G3S-Mz-VS0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Rn7-Xo-60d"/>
+                <constraint firstItem="G3S-Mz-VS0" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="XVG-x6-orE"/>
+                <constraint firstItem="G3S-Mz-VS0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zMi-dT-lW9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="23" width="900" height="603"/>
+    </resources>
+</document>

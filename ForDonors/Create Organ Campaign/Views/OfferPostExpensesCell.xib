@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OfferPostExpensesCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCx-v3-v3V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncF-oT-mBy">
+                                <rect key="frame" x="10" y="5" width="14" height="14"/>
+                                <color key="backgroundColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="6Mp-Gc-1EE"/>
+                                    <constraint firstAttribute="height" constant="14" id="UW4-Kk-10r"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer Surgery Expenses (PSE)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVf-h3-Rze">
+                                <rect key="frame" x="30" y="0.0" width="282" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Rh2-xB-dsy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDK-Xm-GWR">
+                                <rect key="frame" x="10" y="29" width="300" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fPW-mF-VBI">
+                                        <rect key="frame" x="8" y="9" width="285" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="285" id="Naz-kj-NW9"/>
+                                            <constraint firstAttribute="height" constant="32" id="qHE-85-2U4"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="-1" id="8il-zu-VGM"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fPW-mF-VBI" firstAttribute="top" secondItem="gDK-Xm-GWR" secondAttribute="top" constant="9" id="207-Op-JTD"/>
+                                    <constraint firstAttribute="trailing" secondItem="fPW-mF-VBI" secondAttribute="trailing" constant="7" id="8XR-No-4vL"/>
+                                    <constraint firstAttribute="bottom" secondItem="fPW-mF-VBI" secondAttribute="bottom" constant="9" id="9Ks-Ds-VNu"/>
+                                    <constraint firstAttribute="height" constant="50" id="oVr-K4-e3b"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gDK-Xm-GWR" firstAttribute="top" secondItem="MVf-h3-Rze" secondAttribute="bottom" constant="6" id="3Wl-y0-1Fl"/>
+                            <constraint firstAttribute="trailing" secondItem="gDK-Xm-GWR" secondAttribute="trailing" constant="10" id="4MG-AM-dvs"/>
+                            <constraint firstItem="ncF-oT-mBy" firstAttribute="leading" secondItem="lCx-v3-v3V" secondAttribute="leading" constant="10" id="DG3-2E-reH"/>
+                            <constraint firstAttribute="trailing" secondItem="MVf-h3-Rze" secondAttribute="trailing" constant="8" id="WSK-0R-3uu"/>
+                            <constraint firstItem="MVf-h3-Rze" firstAttribute="leading" secondItem="ncF-oT-mBy" secondAttribute="trailing" constant="6" id="WbZ-ax-i2i"/>
+                            <constraint firstItem="ncF-oT-mBy" firstAttribute="top" secondItem="lCx-v3-v3V" secondAttribute="top" constant="5" id="h96-MV-WWe"/>
+                            <constraint firstItem="MVf-h3-Rze" firstAttribute="top" secondItem="lCx-v3-v3V" secondAttribute="top" id="mwH-BS-XcS"/>
+                            <constraint firstItem="gDK-Xm-GWR" firstAttribute="leading" secondItem="lCx-v3-v3V" secondAttribute="leading" constant="10" id="nPv-c5-oHi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lCx-v3-v3V" secondAttribute="trailing" id="91l-UU-tsc"/>
+                    <constraint firstItem="lCx-v3-v3V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AGx-hZ-q0T"/>
+                    <constraint firstItem="lCx-v3-v3V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HgR-zw-EKs"/>
+                    <constraint firstAttribute="bottom" secondItem="lCx-v3-v3V" secondAttribute="bottom" constant="-0.5" id="v8J-Xt-xs3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="MVf-h3-Rze" id="J7W-eY-5yx"/>
+                <outlet property="tfPrice" destination="fPW-mF-VBI" id="4Nx-dH-pnK"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

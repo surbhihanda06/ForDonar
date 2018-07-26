@@ -1,0 +1,144 @@
+/* 
+  Localizable.strings
+  ForDonors
+
+  Created by NITS_Mac3 on 04/06/18.
+  Copyright © 2018 NATIT. All rights reserved.
+*/
+"Home" = "nhà";
+//Menu
+"Profile" = "Hồ sơ";
+"Settings" = "Cài đặt";
+"Create Campaign" = "Tạo chiến dịch";
+"Create Campaign Organ" = "Tạo tổ chức chiến dịch";
+"My Campaigns" = "Chiến dịch của tôi";
+"My Contribution" = "Đóng góp của tôi";
+"Search Donars" = "Tìm kiếm nhà tài trợ";
+"Offer Donars" = "Cung cấp nhà tài trợ";
+"Chat List" = "Danh sách trò chuyện";
+"Stripe Account" = "Tài khoản sọc";
+"Become A Donor" = "Trở thành nhà tài trợ";
+"Logout" = "Đăng xuất";
+"Donar Verification" = "Xác minh";
+"Category" = "thể loại";
+
+//Create Campaign
+"Create Campaign" = "Tạo chiến dịch";
+"Campaign Name" = "Tên chiến dịch";
+"Campaign Tag Line" = "Dòng thẻ chiến dịch";
+"Description" = "Sự miêu tả";
+"Topic" = "Đề tài";
+"End Date" = "Ngày cuối";
+"Location" = "Vị trí";
+"YouTube Link" = "Liên kết YouTube";
+"Asking" = "Hỏi";
+"Add Perks" = "Thêm đặc quyền";
+"Add New Park" = "Thêm công viên mới";
+"Add Collaborators" = "Thêm cộng tác viên";
+"Search Contacts" = "Tìm liên lạc";
+"Next" = "Kế tiếp";
+
+//Create Campaign: Organ
+"Create Campaign: Organ" = "Tạo chiến dịch: Organ";
+"Topic Organ" = "Chủ đề";
+"Select Organ" = "Chọn Organ";
+"Gender" = "Giới tính";
+"Blood Type" = "Nhóm máu";
+"Height" = "Chiều cao";
+"Weight" = "Cân nặng";
+"Expire Date" = "Hạn sử dụng";
+"Offer Surgery Expenses (PSE)" = "Cung cấp chi phí phẫu thuật (PSE)";
+
+//Campaign Details Page
+"Details" = "Chi tiết";
+"YouTube URL" = "URL YouTube";
+"Ok" = "Được";
+"Cancel" = "Hủy bỏ";
+
+//My Campaigns
+"My Campaigns" = "Chiến dịch của tôi";
+
+//My Contributions
+"My Contributions" = "Đóng góp của tôi";
+
+//Chat List
+"Chat List" = "Danh sách trò chuyện";
+
+//Become A Donor
+"Select Donation" = "Select Donation";
+"Skip" = "Skip";
+"Select Organs" = "Select Organs";
+"Submit" = "Submit";
+"By checking you're agreeing to all terms & conditions" = "Bằng cách kiểm tra bạn đồng ý với tất cả các điều khoản và điều kiện";
+
+//Settings
+"Settings" = "Cài đặt";
+"Account" = "Tài khoản";
+"Edit Account" = "Chỉnh sửa tài khoản";
+"Add Donor" = "Thêm nhà tài trợ";
+"Change Password" = "Đổi mật khẩu";
+"Preference" = "Tùy chọn";
+"Localization" = "Bản địa hóa";
+"Region" = "Khu vực";
+
+//Profile
+"Profile" = "Hồ sơ";
+"Remove DonorPro" = "Loại bỏ DonorPro";
+"Social Connection" = "Kết nối cộng đồng";
+
+//Edit Profile
+"Save" = "Tiết kiệm";
+
+//QUick Donations
+"Quick Donations" = "Đóng góp nhanh";
+
+//Search
+"Search" = "Tìm kiếm";
+
+//Comment
+"Comment" = "Nhận xét";
+
+//Change Password
+"Change Password" = "Đổi mật khẩu";
+
+//Campaign Overview
+"Campaign Overview" = "Tổng quan chiến dịch";
+
+//Campaign
+"Campaign" = "Chiến dịch";
+
+//Add Park
+"Add Park" = "Thêm công viên";
+
+//Campaign Details
+"Campaign Details" = "Chi tiết chiến dịch";
+
+//Payment
+"Payment" = "Thanh toán";
+
+//Pop up
+"Campaign is Published" = "Chiến dịch được xuất bản";
+"Note that Verified Campaigns get more attention. User is required to verify identity and banking information to receive funding when Campaign ends. Funding is deposit after 2 weeks closing of campaign." = "Lưu ý rằng Chiến dịch được xác minh thu hút sự chú ý nhiều hơn. Tài trợ được gửi sau 2 tuần kết thúc chiến dịch.";
+"Verify Identity" = "Xác minh danh tính";
+"Enter Banking Information" = "Nhập thông tin ngân hàng";
+
+//Verification
+"Verification" = "Xác minh";
+
+//Add Banking
+"Add Banking" = "Thêm ngân hàng";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChooseTopicCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIx-Ve-uqD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="204-aI-949">
+                                <rect key="frame" x="12" y="15" width="296" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="FBY-op-1Gu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="204-aI-949" secondAttribute="trailing" constant="12" id="4IE-pP-G4H"/>
+                            <constraint firstItem="204-aI-949" firstAttribute="top" secondItem="gIx-Ve-uqD" secondAttribute="top" constant="15" id="4kO-pr-fhK"/>
+                            <constraint firstItem="204-aI-949" firstAttribute="leading" secondItem="gIx-Ve-uqD" secondAttribute="leading" constant="12" id="hfk-Zw-5XN"/>
+                            <constraint firstItem="204-aI-949" firstAttribute="centerY" secondItem="gIx-Ve-uqD" secondAttribute="centerY" id="iai-70-MCW"/>
+                            <constraint firstItem="204-aI-949" firstAttribute="centerX" secondItem="gIx-Ve-uqD" secondAttribute="centerX" id="mTA-hZ-A3o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gIx-Ve-uqD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3Ye-RU-xs3"/>
+                    <constraint firstItem="gIx-Ve-uqD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="G3Z-sR-mXn"/>
+                    <constraint firstAttribute="trailing" secondItem="gIx-Ve-uqD" secondAttribute="trailing" id="ayz-NL-ORn"/>
+                    <constraint firstAttribute="bottom" secondItem="gIx-Ve-uqD" secondAttribute="bottom" constant="-0.5" id="o3C-hQ-Ybx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblName" destination="204-aI-949" id="fur-Tt-S9f"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-BoldCondensed.ttf">
+            <string>Roboto-BoldCondensed</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ContributeOrDonateCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH4-m2-pF3">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                        <color key="backgroundColor" red="0.29411764709999999" green="0.68627450980000004" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Roboto-BoldCondensed" family="Roboto" pointSize="17"/>
+                        <state key="normal" title="Contribute">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MH5-ZE-1II">
+                        <rect key="frame" x="160" y="0.0" width="160" height="44"/>
+                        <color key="backgroundColor" red="1" green="0.45606044037417393" blue="0.87624767511535451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Roboto-BoldCondensed" family="Roboto" pointSize="17"/>
+                        <state key="normal" title="Donate Organ">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSE-5I-eTR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <color key="backgroundColor" red="0.29411764705882354" green="0.68627450980000004" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Ogx-cx-Afn"/>
+                            <constraint firstAttribute="width" constant="320" id="UyI-qv-pSe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-BoldCondensed" family="Roboto" pointSize="17"/>
+                        <state key="normal" title="Publish">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OSE-5I-eTR" secondAttribute="bottom" constant="-0.5" id="4JA-CX-wzk"/>
+                    <constraint firstAttribute="trailing" secondItem="OSE-5I-eTR" secondAttribute="trailing" id="DRV-TC-mwY"/>
+                    <constraint firstAttribute="trailing" secondItem="MH5-ZE-1II" secondAttribute="trailing" id="DyL-b7-6I5"/>
+                    <constraint firstAttribute="bottom" secondItem="MH5-ZE-1II" secondAttribute="bottom" constant="-0.5" id="Etp-d8-Vd6"/>
+                    <constraint firstItem="MH5-ZE-1II" firstAttribute="leading" secondItem="eH4-m2-pF3" secondAttribute="trailing" id="G0o-F2-sTN"/>
+                    <constraint firstItem="MH5-ZE-1II" firstAttribute="height" secondItem="eH4-m2-pF3" secondAttribute="height" id="GrU-yv-Fq7"/>
+                    <constraint firstItem="eH4-m2-pF3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IXX-Of-J3d"/>
+                    <constraint firstItem="OSE-5I-eTR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RGK-TJ-mV4"/>
+                    <constraint firstItem="eH4-m2-pF3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UyR-9J-Kz7"/>
+                    <constraint firstItem="MH5-ZE-1II" firstAttribute="width" secondItem="eH4-m2-pF3" secondAttribute="width" id="Wyi-UK-hHc"/>
+                    <constraint firstItem="OSE-5I-eTR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aGt-d9-z6e"/>
+                    <constraint firstAttribute="bottom" secondItem="eH4-m2-pF3" secondAttribute="bottom" constant="-0.5" id="kkb-WV-gp0"/>
+                    <constraint firstItem="MH5-ZE-1II" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tuV-Va-wws"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnContribute" destination="eH4-m2-pF3" id="vKY-5a-cq7"/>
+                <outlet property="btnDonate" destination="MH5-ZE-1II" id="HDs-JB-2eB"/>
+                <outlet property="btnPublish" destination="OSE-5I-eTR" id="QwV-gs-1Wz"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

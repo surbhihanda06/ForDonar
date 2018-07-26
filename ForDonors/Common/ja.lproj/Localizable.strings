@@ -1,0 +1,148 @@
+/* 
+  Localizable.strings
+  ForDonors
+
+  Created by NITS_Mac3 on 04/06/18.
+  Copyright © 2018 NATIT. All rights reserved.
+*/
+"Home" = "ホーム";
+"Profile" = "プロフィール";
+"Settings" = "設定";
+"Create Campaign" = "キャンペーンの作成";
+"Create Campaign Organ" = "キャンペーンオルガンを作成する";
+"My Campaigns" = "私のキャンペーン";
+"My Contribution" = "私の貢献";
+"Search Donars" = "ドナーを検索";
+"Offer Donars" = "ドナーを提供する";
+"Chat List" = "チャットリスト";
+"Stripe Account" = "ストライプアカウント";
+"Become A Donor" = "ドナーになる";
+"Logout" = "ログアウト";
+"Donar Verification" = "確認をする";
+"Category" = "カテゴリー";
+
+//Create Campaign
+"Create Campaign" = "キャンペーンの作成";
+"Campaign Name" = "キャンペーン名";
+"Campaign Tag Line" = "キャンペーンタグライン";
+"Description" = "説明";
+"Topic" = "トピック";
+"End Date" = "終了日";
+"Location" = "ロケーション";
+"YouTube Link" = "YouTubeリンク";
+"Asking" = "尋ねる";
+"Add Perks" = "Perksを追加";
+"Add New Park" = "新しい公園を追加";
+"Add Collaborators" = "共同編集者を追加";
+"Search Contacts" = "連絡先を検索";
+"Next" = "次";
+
+//Create Campaign: Organ
+"Create Campaign: Organ" = "キャンペーン作成：オルガン";
+"Topic Organ" = "トピックオルガン";
+"Select Organ" = "オルガンを選択";
+"Gender" = "性別";
+"Blood Type" = "血液型";
+"Height" = "高さ";
+"Weight" = "重量";
+"Expire Date" = "有効期限";
+"Offer Surgery Expenses (PSE)" = "手術費（PSE）を提供する";
+
+//Campaign Details Page
+"Details" = "詳細";
+"YouTube URL" = "YouTubeのURL";
+"Ok" = "OK";
+"Cancel" = "キャンセル";
+
+//My Campaigns
+"My Campaigns" = "私のキャンペーン";
+
+//My Contributions
+"My Contributions" = "私の貢献";
+
+//Chat List
+"Chat List" = "チャットリスト";
+
+//Become A Donor
+"Select Donation" = "寄付を選択";
+"Skip" = "スキップ";
+"Select Organs" = "オルガンを選択";
+"Submit" = "提出する";
+"By checking you're agreeing to all terms & conditions" = "あなたがすべての利用規約に同意していることを確認することで";
+
+//Settings
+"Settings" = "設定";
+"Account" = "アカウント";
+"Edit Account" = "アカウントの編集";
+"Add Donor" = "ドナーを追加";
+"Change Password" = "パスワードを変更する";
+"Preference" = "嗜好";
+"Localization" = "ローカリゼーション";
+"Region" = "領域";
+
+//Profile
+"Profile" = "プロフィール";
+"Remove DonorPro" = "DonorProを削除";
+"Social Connection" = "ソーシャルコネクション";
+
+//Edit Profile
+"Save" = "セーブ";
+
+//QUick Donations
+"Quick Donations" = "迅速な寄付";
+
+//Search
+"Search" = "検索";
+
+//Comment
+"Comment" = "コメント";
+
+//Change Password
+"Change Password" = "パスワードの変更";
+
+//Campaign Overview
+"Campaign Overview" = "キャンペーンの概要";
+
+//Campaign
+"Campaign" = "キャンペーン";
+
+//Add Park
+"Add Park" = "パークを追加";
+
+//Campaign Details
+"Campaign Details" = "キャンペーンの詳細";
+
+//Payment
+"Payment" = "お支払い";
+
+//Pop up
+"Campaign is Published" = "キャンペーンが公開されました";
+"Note that Verified Campaigns get more attention. User is required to verify identity and banking information to receive funding when Campaign ends. Funding is deposit after 2 weeks closing of campaign." = "確認済みのキャンペーンが注目を集めています。 預金口座番号は、銀行口座番号、口座番号、預金口座番号、口座番号、口座番号、口座番号、 2週間の締め切り後に資金調達が行われます。";
+"Verify Identity" = "IDの確認";
+"Enter Banking Information" = "銀行情報を入力";
+
+//Verification
+"Verification" = "検証";
+
+//Add Banking
+"Add Banking" = "バンキングの追加";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

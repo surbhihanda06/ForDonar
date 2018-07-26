@@ -1,0 +1,166 @@
+//
+//  MyCampaignController.swift
+//  ForDonors
+//
+//  Created by Manab Kumar Mal on 29/03/18.
+//  Copyright © 2018 NATIT. All rights reserved.
+//
+
+import UIKit
+import SVProgressHUD
+
+class MyCampaignController: UIViewController {
+    @IBOutlet weak var vwSearch: UIView!
+    @IBOutlet weak var tfSearch: UITextField!
+    @IBOutlet weak var tblVwCampaignList: UITableView!
+    
+    var arrCampaignList = [CampaignDetails]()
+    var arrAllList = [CampaignDetails]()
+    
+    var pageCount: Int = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
+        vwSearch.layer.masksToBounds = true
+        vwSearch.layer.cornerRadius = 12
+        
+        tblVwCampaignList.register(UINib(nibName: "MyCampaignCell", bundle: Bundle.main), forCellReuseIdentifier: "MyCampaignCell")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        MyCampaignListCall()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Service Call
+    func MyCampaignListCall()
+    {
+        //http://fordonor.us-west-2.elasticbeanstalk.com/api/user/53447/campaign?sortBy=createdDate&size=1&page=1&direction=DESC
+        SVProgressHUD.show()
+        let userId = UserDefaults.standard.object(forKey: "userId") as? Int ?? 0
+        let prmList:[String: Any] = [:] //\(String(format:"%d",userId))
+<<<<<<< HEAD
+        let apiName = String(format:"/user/53447/campaign?sortBy=createdDate&size=2&page=%d&direction=DESC", pageCount)
+=======
+        //MARK:- Static page count need to chagne later
+        pageCount = 10
+        let apiName = String(format:"/user/\(String(format:"%d",userId))/campaign?sortBy=createdDate&size=2&page=%d&direction=DESC", pageCount)
+>>>>>>> 8aee6bd63fde7d1b9fbec791835bfdcec2ccad60
+        let request = MakeGetRequest.init(parameterList: prmList, APIName: apiName)
+        RequestExecutor.executeRequest(request, completion:{ (error: Error?, getMyData: MyCampaignListResponse?) in
+            SVProgressHUD.dismiss()
+            if getMyData != nil
+            {
+                self.arrCampaignList = (getMyData?.allList)!
+                self.tblVwCampaignList.reloadData()
+            }
+            else
+            {
+                if let err = error as? URLError, err.code == .notConnectedToInternet {
+                    // no internet connection
+                    //print(err)
+                    if let vc = UIApplication.topViewController()
+                    {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            Validation.showTransparentWindow(sender: vc, strMsg: "No Internet Connection!")
+                        }
+                    }
+                } else {
+                    // other failures
+                    
+                    if let err = error as? DDSError
+                    {
+                        let msg:String = err.description
+                        Alert.disPlayAlertMessage(titleMessage: "Sorry", alertMsg: msg)
+                    }
+                    
+                }
+            }
+        })
+    }
+    
+    // MARK: - Action
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        //If we reach the end of the table.
+        if ((scrollView.contentOffset.y + scrollView.frame.size.height) >= scrollView.contentSize.height)
+        {
+            //Add ten more rows and reload the table content.
+            print("Bottom Refresh")
+            pageCount = pageCount + 1
+            //MyCampaignListCall()
+            //tableRowNumber += 10
+            //tableView.reloadData()
+        }
+    }
+    
+    @IBAction func btnBackPressed(_ sender: Any)
+    {
+        _ = self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func btnFilterPressed(_ sender: Any) {
+    }
+    
+    @IBAction func btnSearchPressed(_ sender: Any) {
+    }
+}
+extension MyCampaignController: UITableViewDataSource,UITableViewDelegate
+{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return arrCampaignList.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 390
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let  cell = tableView.dequeueReusableCell(withIdentifier: "MyCampaignCell", for: indexPath) as! MyCampaignCell
+        
+        cell.vwBg.layer.masksToBounds = true
+        cell.vwBg.layer.shadowColor = UIColor.darkGray.cgColor
+        cell.vwBg.layer.shadowOffset = CGSize(width: 0, height: 0)
+        cell.vwBg.layer.shadowRadius = 2.0
+        cell.vwBg.layer.shadowOpacity = 1.0
+        cell.vwBg.layer.cornerRadius = 4
+        
+        let details = arrCampaignList[indexPath.row]
+        cell.lblTitle.text = details.campaign_name
+        let price = details.goal_amount
+        if price != nil
+        {
+            cell.lblAskingPrice.text = "Asking " + String(price!)
+        }
+        
+        let images = details.image
+        if images.count > 0
+        {
+            let getImage = UrlUtil.getCampaignImage(image: images[0] as! String)
+            
+            cell.imgVwImage.sd_setImage(with: URL(string: getImage), placeholderImage: UIImage(named: Default_Image))
+        }
+        return cell
+        }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let details = arrCampaignList[indexPath.row]
+        let moveViewController = ConfirmationController()
+        self.navigationController?.pushViewController(moveViewController, animated: true)
+        moveViewController.campaignId = details.id
+        moveViewController.fromHomeOrUpload = "Home"
+    }
+}

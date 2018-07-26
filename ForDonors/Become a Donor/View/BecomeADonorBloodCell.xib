@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BecomeADonorBloodCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZ2-cY-7qv">
+                        <rect key="frame" x="17" y="13" width="286" height="42"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Blood Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f5X-m0-6rq">
+                                <rect key="frame" x="30" y="13" width="200" height="18"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="rpI-wd-5LX"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="ePR-IQ-4x8"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="EEw-UH-MRz">
+                                <rect key="frame" x="266" y="18" width="12" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="Kqo-78-xYW"/>
+                                    <constraint firstAttribute="height" constant="8" id="m6D-nC-qgh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="EKA-RZ-MoM"/>
+                            <constraint firstItem="EEw-UH-MRz" firstAttribute="top" secondItem="hZ2-cY-7qv" secondAttribute="top" constant="18" id="SWw-b1-wCR"/>
+                            <constraint firstAttribute="bottom" secondItem="EEw-UH-MRz" secondAttribute="bottom" constant="16" id="V7K-PY-v0f"/>
+                            <constraint firstItem="f5X-m0-6rq" firstAttribute="leading" secondItem="hZ2-cY-7qv" secondAttribute="leading" constant="30" id="cYc-9c-NpT"/>
+                            <constraint firstItem="f5X-m0-6rq" firstAttribute="top" secondItem="hZ2-cY-7qv" secondAttribute="top" constant="13" id="y1t-Vk-aJS"/>
+                            <constraint firstItem="EEw-UH-MRz" firstAttribute="leading" secondItem="f5X-m0-6rq" secondAttribute="trailing" constant="36" id="yqO-Vx-9Rf"/>
+                            <constraint firstAttribute="trailing" secondItem="EEw-UH-MRz" secondAttribute="trailing" constant="8" id="zea-WY-4uE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hZ2-cY-7qv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="8MX-9j-sbM"/>
+                    <constraint firstItem="hZ2-cY-7qv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="1" id="FO3-bZ-kwW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hZ2-cY-7qv" secondAttribute="trailing" constant="1" id="Nl6-dH-CSh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tfBloodType" destination="f5X-m0-6rq" id="ZaC-Kd-puG"/>
+                <outlet property="vwBloodType" destination="hZ2-cY-7qv" id="b94-n5-y9P"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downArrow" width="9" height="4"/>
+    </resources>
+</document>

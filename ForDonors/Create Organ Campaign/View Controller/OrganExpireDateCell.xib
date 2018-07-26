@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Heavy.ttf">
+            <string>Lato-Heavy</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OrganExpireDateCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLv-IY-tmO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expire Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEj-g1-ZYz">
+                                <rect key="frame" x="10" y="0.0" width="180" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="7rC-GD-hJZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="Sjy-TE-DXt">
+                                <rect key="frame" x="17" y="36" width="26" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="9Fc-Ph-dSs"/>
+                                    <constraint firstAttribute="width" constant="26" id="m6I-F5-D3v"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-jQ-BYe">
+                                <rect key="frame" x="292" y="47" width="10" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="OAN-b6-wmx"/>
+                                    <constraint firstAttribute="width" constant="10" id="Rko-AR-dYr"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L52-oi-hdc">
+                                <rect key="frame" x="51" y="30" width="241" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="fkw-Os-Del"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Lato-Heavy" family="Lato" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="zKB-pt-HN1"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1p-tt-lEg">
+                                <rect key="frame" x="0.0" y="82" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="2rO-a3-mTB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="83" id="BrN-e3-DlV"/>
+                            <constraint firstItem="QEj-g1-ZYz" firstAttribute="leading" secondItem="BLv-IY-tmO" secondAttribute="leading" constant="10" id="Ecm-tN-8XU"/>
+                            <constraint firstItem="p1p-tt-lEg" firstAttribute="top" secondItem="L52-oi-hdc" secondAttribute="bottom" constant="13" id="KaQ-H4-5eM"/>
+                            <constraint firstItem="Sjy-TE-DXt" firstAttribute="leading" secondItem="BLv-IY-tmO" secondAttribute="leading" constant="17" id="Kur-T9-TRT"/>
+                            <constraint firstItem="p1p-tt-lEg" firstAttribute="leading" secondItem="BLv-IY-tmO" secondAttribute="leading" id="NPd-qO-aZ8"/>
+                            <constraint firstItem="QEj-g1-ZYz" firstAttribute="top" secondItem="BLv-IY-tmO" secondAttribute="top" id="Q9Z-mn-3L1"/>
+                            <constraint firstItem="Sjy-TE-DXt" firstAttribute="top" secondItem="QEj-g1-ZYz" secondAttribute="bottom" constant="13" id="QBm-Ap-3cD"/>
+                            <constraint firstItem="bbc-jQ-BYe" firstAttribute="leading" secondItem="L52-oi-hdc" secondAttribute="trailing" id="REs-qI-rmi"/>
+                            <constraint firstAttribute="trailing" secondItem="p1p-tt-lEg" secondAttribute="trailing" id="VE2-tW-9HM"/>
+                            <constraint firstAttribute="trailing" secondItem="bbc-jQ-BYe" secondAttribute="trailing" constant="18" id="ZAK-Qp-JCb"/>
+                            <constraint firstItem="L52-oi-hdc" firstAttribute="leading" secondItem="Sjy-TE-DXt" secondAttribute="trailing" constant="8" id="aB2-zL-sOT"/>
+                            <constraint firstItem="L52-oi-hdc" firstAttribute="top" secondItem="QEj-g1-ZYz" secondAttribute="bottom" constant="7" id="cIt-3m-e1X"/>
+                            <constraint firstAttribute="trailing" secondItem="QEj-g1-ZYz" secondAttribute="trailing" constant="130" id="fbP-cC-68u"/>
+                            <constraint firstItem="bbc-jQ-BYe" firstAttribute="top" secondItem="BLv-IY-tmO" secondAttribute="top" constant="47" id="kvZ-8B-amb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BLv-IY-tmO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cAr-J4-wRW"/>
+                    <constraint firstItem="BLv-IY-tmO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ikr-HS-46m"/>
+                    <constraint firstAttribute="trailing" secondItem="BLv-IY-tmO" secondAttribute="trailing" id="xUR-Ed-iUe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="QEj-g1-ZYz" id="o6m-he-Cxh"/>
+                <outlet property="tfExpireDate" destination="L52-oi-hdc" id="Dhe-9T-XQt"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="27" height="15"/>
+        <image name="plus" width="28" height="29"/>
+    </resources>
+</document>

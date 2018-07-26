@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OrganCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bm7-dv-5wr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEx-UK-Cip">
+                                <rect key="frame" x="17" y="15" width="150" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="qwE-Gj-H4u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hci-ro-Yxs">
+                                <rect key="frame" x="287" y="18" width="14" height="14"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vge-IV-Rj0">
+                                        <rect key="frame" x="1" y="2" width="12" height="10"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25366002319999997" green="0.64269983770000005" blue="0.88083821539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="3nH-uA-wPo"/>
+                                    <constraint firstItem="vge-IV-Rj0" firstAttribute="leading" secondItem="hci-ro-Yxs" secondAttribute="leading" constant="1" id="BJ2-G0-QjS"/>
+                                    <constraint firstAttribute="height" constant="14" id="BdB-3j-u7q"/>
+                                    <constraint firstItem="vge-IV-Rj0" firstAttribute="top" secondItem="hci-ro-Yxs" secondAttribute="top" constant="2" id="TQd-dO-Hy1"/>
+                                    <constraint firstAttribute="bottom" secondItem="vge-IV-Rj0" secondAttribute="bottom" constant="2" id="VWC-eK-Ac0"/>
+                                    <constraint firstAttribute="trailing" secondItem="vge-IV-Rj0" secondAttribute="trailing" constant="1" id="b0h-vh-B7u"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxE-st-2ai">
+                                <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ydd-af-PPs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hci-ro-Yxs" firstAttribute="leading" secondItem="QEx-UK-Cip" secondAttribute="trailing" constant="120" id="2dD-Zu-2Ot"/>
+                            <constraint firstItem="QEx-UK-Cip" firstAttribute="top" secondItem="bm7-dv-5wr" secondAttribute="top" constant="15" id="CAA-nv-iBE"/>
+                            <constraint firstAttribute="trailing" secondItem="hci-ro-Yxs" secondAttribute="trailing" constant="19" id="IHt-Eo-6w4"/>
+                            <constraint firstItem="MxE-st-2ai" firstAttribute="leading" secondItem="bm7-dv-5wr" secondAttribute="leading" id="dAh-aZ-0sM"/>
+                            <constraint firstAttribute="bottom" secondItem="hci-ro-Yxs" secondAttribute="bottom" constant="18" id="eXd-89-BIE"/>
+                            <constraint firstItem="QEx-UK-Cip" firstAttribute="leading" secondItem="bm7-dv-5wr" secondAttribute="leading" constant="17" id="fF9-Js-jeF"/>
+                            <constraint firstItem="hci-ro-Yxs" firstAttribute="top" secondItem="bm7-dv-5wr" secondAttribute="top" constant="18" id="iU6-wU-lup"/>
+                            <constraint firstAttribute="trailing" secondItem="MxE-st-2ai" secondAttribute="trailing" id="kog-aV-Kce"/>
+                            <constraint firstItem="MxE-st-2ai" firstAttribute="top" secondItem="QEx-UK-Cip" secondAttribute="bottom" constant="14" id="ri5-hj-Gaf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bm7-dv-5wr" secondAttribute="trailing" id="5ly-dP-fJo"/>
+                    <constraint firstItem="bm7-dv-5wr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="C4n-fr-usb"/>
+                    <constraint firstAttribute="bottom" secondItem="bm7-dv-5wr" secondAttribute="bottom" constant="-0.5" id="Ljk-m0-NzS"/>
+                    <constraint firstItem="bm7-dv-5wr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MRn-Xe-ned"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgVwCheck" destination="vge-IV-Rj0" id="9Kn-y0-jtz"/>
+                <outlet property="lblOrganName" destination="QEx-UK-Cip" id="U4g-86-vAx"/>
+                <outlet property="vwCheck" destination="hci-ro-Yxs" id="ps5-fR-tgb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

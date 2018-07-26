@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NameCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="24.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMR-Ht-q7m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation Camp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYK-sC-yEe">
+                                <rect key="frame" x="13" y="3" width="293" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="azz-dd-xjn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="11"/>
+                                <color key="textColor" red="0.38431372549019605" green="0.38431372549019605" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BYK-sC-yEe" secondAttribute="trailing" constant="14" id="Dip-x1-4hh"/>
+                            <constraint firstItem="BYK-sC-yEe" firstAttribute="leading" secondItem="kMR-Ht-q7m" secondAttribute="leading" constant="13" id="bcw-6x-5lL"/>
+                            <constraint firstItem="BYK-sC-yEe" firstAttribute="top" secondItem="kMR-Ht-q7m" secondAttribute="top" constant="3" id="lKO-wf-DuM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kMR-Ht-q7m" secondAttribute="trailing" id="0GV-zC-7pB"/>
+                    <constraint firstItem="kMR-Ht-q7m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PlF-Ip-Jva"/>
+                    <constraint firstAttribute="bottom" secondItem="kMR-Ht-q7m" secondAttribute="bottom" constant="-0.5" id="UBj-eC-bwJ"/>
+                    <constraint firstItem="kMR-Ht-q7m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gYm-FZ-tzz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblName" destination="BYK-sC-yEe" id="Dar-GM-lbZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

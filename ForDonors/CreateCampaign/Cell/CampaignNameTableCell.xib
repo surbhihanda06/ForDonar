@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Heavy.ttf">
+            <string>Lato-Heavy</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CampaignNameTableCell" rowHeight="74" id="KGk-i7-Jjw" customClass="CampaignNameTableCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ql4-Ci-ckq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campaign Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzQ-tV-asc">
+                                <rect key="frame" x="17" y="0.0" width="175" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Occ-nB-tnB"/>
+                                    <constraint firstAttribute="width" constant="175" id="Zgm-lj-bBJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="T67-Nm-riM">
+                                <rect key="frame" x="17" y="28.5" width="26" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="39q-Mz-gHL"/>
+                                    <constraint firstAttribute="width" constant="26" id="uGM-9g-qy1"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PMP-IF-FXl">
+                                <rect key="frame" x="51" y="22" width="252" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vJo-HL-nvo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Lato-Heavy" family="Lato" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="SZr-UM-kfz"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esK-nJ-naL">
+                                <rect key="frame" x="17" y="72" width="286" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.75" id="Mir-YT-MUf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PMP-IF-FXl" firstAttribute="top" secondItem="ql4-Ci-ckq" secondAttribute="top" constant="22" id="3cq-L6-sVK"/>
+                            <constraint firstItem="T67-Nm-riM" firstAttribute="centerY" secondItem="PMP-IF-FXl" secondAttribute="centerY" id="5kD-9n-Qss"/>
+                            <constraint firstAttribute="trailing" secondItem="PMP-IF-FXl" secondAttribute="trailing" constant="17" id="FwJ-wp-FOZ"/>
+                            <constraint firstItem="esK-nJ-naL" firstAttribute="leading" secondItem="ql4-Ci-ckq" secondAttribute="leading" constant="17" id="JEj-ng-oi3"/>
+                            <constraint firstItem="T67-Nm-riM" firstAttribute="leading" secondItem="ql4-Ci-ckq" secondAttribute="leading" constant="17" id="McI-aC-8nB"/>
+                            <constraint firstItem="fzQ-tV-asc" firstAttribute="leading" secondItem="ql4-Ci-ckq" secondAttribute="leading" constant="17" id="NG6-zH-ZQ3"/>
+                            <constraint firstItem="fzQ-tV-asc" firstAttribute="top" secondItem="ql4-Ci-ckq" secondAttribute="top" id="l5s-Sw-WgZ"/>
+                            <constraint firstAttribute="trailing" secondItem="esK-nJ-naL" secondAttribute="trailing" constant="17" id="pNH-Vb-XFe"/>
+                            <constraint firstItem="PMP-IF-FXl" firstAttribute="leading" secondItem="T67-Nm-riM" secondAttribute="trailing" constant="8" id="wvf-68-Rgs"/>
+                            <constraint firstAttribute="bottom" secondItem="esK-nJ-naL" secondAttribute="bottom" constant="1" id="xru-Wb-3Hn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ql4-Ci-ckq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2dJ-XH-gtg"/>
+                    <constraint firstAttribute="bottom" secondItem="ql4-Ci-ckq" secondAttribute="bottom" constant="-0.5" id="AhV-8G-IyH"/>
+                    <constraint firstItem="ql4-Ci-ckq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TkP-Ne-Qnn"/>
+                    <constraint firstAttribute="trailing" secondItem="ql4-Ci-ckq" secondAttribute="trailing" id="eP5-Sl-N4f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="fzQ-tV-asc" id="rWx-g7-etS"/>
+                <outlet property="tfCampaignName" destination="PMP-IF-FXl" id="ERR-94-wOe"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="67"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plus" width="28" height="29"/>
+    </resources>
+</document>

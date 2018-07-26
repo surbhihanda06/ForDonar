@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ContributionTitleCell" customModule="ForDonors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jz-U2-XfN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dt-j3-wRd">
+                                <rect key="frame" x="10" y="17" width="186" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="5wT-lx-Ino"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Contribution">
+                                        <attributes>
+                                            <color key="NSColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="(0)">
+                                        <attributes>
+                                            <color key="NSColor" red="0.25490196079999999" green="0.64313725489999995" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="05V-e9-z5y">
+                                <rect key="frame" x="299" y="21" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="aPE-I5-N2C"/>
+                                    <constraint firstAttribute="width" constant="12" id="eqK-IN-rmU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNu-rL-wsU">
+                                <rect key="frame" x="0.0" y="53" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="jTX-4D-Waj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="8wm-lE-B5b"/>
+                            <constraint firstItem="05V-e9-z5y" firstAttribute="top" secondItem="2jz-U2-XfN" secondAttribute="top" constant="21" id="HG0-M8-LNp"/>
+                            <constraint firstItem="jNu-rL-wsU" firstAttribute="top" secondItem="5Dt-j3-wRd" secondAttribute="bottom" constant="16" id="MYh-dy-j6t"/>
+                            <constraint firstAttribute="trailing" secondItem="05V-e9-z5y" secondAttribute="trailing" constant="9" id="MxB-tB-iFf"/>
+                            <constraint firstAttribute="trailing" secondItem="jNu-rL-wsU" secondAttribute="trailing" id="RiP-uu-N8I"/>
+                            <constraint firstItem="5Dt-j3-wRd" firstAttribute="top" secondItem="2jz-U2-XfN" secondAttribute="top" constant="17" id="fWz-Ii-wvg"/>
+                            <constraint firstItem="05V-e9-z5y" firstAttribute="leading" secondItem="5Dt-j3-wRd" secondAttribute="trailing" constant="103" id="qn4-6R-76b"/>
+                            <constraint firstItem="5Dt-j3-wRd" firstAttribute="leading" secondItem="2jz-U2-XfN" secondAttribute="leading" constant="10" id="x3U-jh-m5M"/>
+                            <constraint firstItem="jNu-rL-wsU" firstAttribute="leading" secondItem="2jz-U2-XfN" secondAttribute="leading" id="zai-Ub-1eS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2jz-U2-XfN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JfL-k5-fM5"/>
+                    <constraint firstItem="2jz-U2-XfN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YyO-Xg-EqE"/>
+                    <constraint firstAttribute="trailing" secondItem="2jz-U2-XfN" secondAttribute="trailing" id="iVm-Ko-wqO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right-arrow" width="16" height="16"/>
+    </resources>
+</document>
